@@ -1,0 +1,151 @@
+/* 
+   =============================================
+   Custom Styles - IA & Data Portfolio
+   ============================================= 
+*/
+
+:root {
+    --primary-glow: rgba(0, 210, 255, 0.4);
+    --secondary-glow: rgba(58, 123, 213, 0.4);
+    --bg-darker: #0d1117;
+    --glass-bg: rgba(22, 27, 34, 0.7);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    background-color: var(--bg-darker);
+    color: #c9d1d9;
+    overflow-x: hidden;
+}
+
+/* Typography */
+.font-inter { font-family: 'Inter', sans-serif; }
+.font-outfit { font-family: 'Outfit', sans-serif; }
+
+.text-gradient {
+    background: linear-gradient(90deg, #00d2ff 0%, #3a7bd5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.text-light-opacity {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.bg-darker {
+    background-color: var(--bg-darker) !important;
+}
+
+/* Glassmorphism Navbar */
+.glass-navbar {
+    background: rgba(13, 17, 23, 0.85) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--glass-border);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    overflow: hidden;
+    padding-top: 76px; /* Offset for navbar */
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero-bg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at center, rgba(13, 17, 23, 0.6) 0%, rgba(13, 17, 23, 0.95) 100%);
+}
+
+.btn-glow {
+    box-shadow: 0 0 20px var(--primary-glow);
+    transition: all 0.3s ease;
+}
+
+.btn-glow:hover {
+    box-shadow: 0 0 30px var(--primary-glow), 0 0 10px var(--primary-glow) inset;
+    transform: translateY(-2px);
+}
+
+/* Glass Cards (Projects & About) */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid var(--glass-border);
+    border-radius: 16px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+/* Project Cards Image Effect */
+.card-img-top-wrapper {
+    overflow: hidden;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.card-img-top-wrapper img {
+    transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+.hover-card-wrapper:hover .glass-card {
+    transform: translateY(-10px);
+    border-color: rgba(0, 210, 255, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 20px rgba(0, 210, 255, 0.1);
+}
+
+.hover-card-wrapper:hover .card-img-top-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Utilities */
+.py-6 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/* Animations */
+.slide-up-anim, .fade-in-anim {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/* Footer Social Buttons */
+.social-btn {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.social-btn:hover {
+    background-color: #fff;
+    color: var(--bg-darker);
+    transform: scale(1.1);
+}

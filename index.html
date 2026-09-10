@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Engenheiro de Dados e IA</title>
+    
+    <!-- Meta SEO -->
+    <meta name="description" content="Portfólio premium de Engenharia de Dados e Inteligência Artificial. Projetos de RAG, ETL, Automação e Scraping.">
+    
+    <!-- Fontes do Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS (Bootswatch) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top glass-navbar">
+        <div class="container">
+            <a class="navbar-brand font-outfit" href="#">IA & Dados</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto font-inter">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projetos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white ms-lg-3 px-4 rounded-pill" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="hero-bg">
+            <img src="assets/hero_bg.jpg" alt="Abstract AI Background">
+            <div class="hero-overlay"></div>
+        </div>
+        <div class="container text-center text-white position-relative z-1 hero-content">
+            <h1 class="display-3 fw-bolder font-outfit text-gradient mb-3">Construindo o Futuro com Dados & Inteligência Artificial</h1>
+            <p class="lead font-inter mb-5 text-light-opacity">Transformando dados complexos em sistemas inteligentes e escaláveis.</p>
+            <a href="#projects" class="btn btn-primary btn-lg rounded-pill px-5 py-3 font-outfit fw-bold btn-glow">Explorar Projetos</a>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-6 bg-dark text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 mb-4 mb-lg-0 slide-up-anim">
+                    <h2 class="font-outfit fw-bold text-gradient mb-4">Engenharia Exata para Problemas Complexos</h2>
+                    <p class="font-inter lead">Com foco em alta performance e arquiteturas escaláveis, atuo na intersecção entre Engenharia de Dados e Inteligência Artificial.</p>
+                    <p class="font-inter text-secondary">
+                        Minha especialidade envolve orquestração de pipelines robustos (ETL/ELT), integração de LLMs e a construção de serviços gerativos que conectam modelos de linguagem aos seus dados privados (Arquitetura RAG), mitigando alucinações matemáticas e contextuais.
+                    </p>
+                    <ul class="list-unstyled mt-4 font-inter text-secondary">
+                        <li class="mb-2">🔹 Python, FastAPI, Docker</li>
+                        <li class="mb-2">🔹 Modelagem DDD e Microsserviços</li>
+                        <li class="mb-2">🔹 Bancos Vetoriais e NLP</li>
+                        <li class="mb-2">🔹 ETL e Pipelines Modernos</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5 offset-lg-1">
+                    <div class="glass-card p-5 text-center fade-in-anim">
+                        <h3 class="font-outfit text-white mb-3">Missão</h3>
+                        <p class="font-inter text-secondary m-0">"Converter regras de negócio em arquitetura de software exata, inserindo capacidades generativas com previsibilidade matemática e segurança."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-6 bg-darker">
+        <div class="container">
+            <div class="text-center mb-5 slide-up-anim">
+                <h2 class="font-outfit fw-bold text-gradient">Projetos em Destaque</h2>
+                <p class="font-inter text-secondary">Aplicações reais de RAG, NLP e Engenharia de Dados.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Project 1 -->
+                <div class="col-lg-4 col-md-6 hover-card-wrapper">
+                    <div class="card bg-dark border-0 h-100 glass-card project-card">
+                        <div class="card-img-top-wrapper">
+                            <img src="assets/proj_rag.jpg" class="card-img-top" alt="RAG-py Project">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="badge bg-primary mb-3 align-self-start font-outfit">NLP & GenAI</div>
+                            <h4 class="card-title font-outfit text-white fw-bold">RAG-py (Retrieval-Augmented Generation)</h4>
+                            <p class="card-text font-inter text-secondary flex-grow-1">Implementação de arquitetura RAG para conectar LLMs a bases de conhecimento privadas, utilizando embeddings e bancos de dados vetoriais para garantir respostas ancoradas em fatos.</p>
+                            <a href="https://github.com/seu-usuario/RAG-py" target="_blank" class="btn btn-outline-light mt-3 stretched-link rounded-pill font-inter">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="col-lg-4 col-md-6 hover-card-wrapper">
+                    <div class="card bg-dark border-0 h-100 glass-card project-card">
+                        <div class="card-img-top-wrapper">
+                            <img src="assets/proj_etl.jpg" class="card-img-top" alt="Data Engineering Pipelines">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="badge bg-info mb-3 align-self-start font-outfit">Data Engineering</div>
+                            <h4 class="card-title font-outfit text-white fw-bold">Pipelines ETL em Python</h4>
+                            <p class="card-text font-inter text-secondary flex-grow-1">Desenvolvimento de pipelines robustos e escaláveis para extração, transformação e carregamento de dados (ETL). Arquitetura focada em performance para grande volume de requisições.</p>
+                            <a href="https://github.com/seu-usuario/data_engineering_py" target="_blank" class="btn btn-outline-light mt-3 stretched-link rounded-pill font-inter">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="col-lg-4 col-md-6 hover-card-wrapper">
+                    <div class="card bg-dark border-0 h-100 glass-card project-card">
+                        <div class="card-img-top-wrapper">
+                            <img src="assets/proj_scraping.jpg" class="card-img-top" alt="Scraping Vagas AI">
+                        </div>
+                        <div class="card-body p-4 d-flex flex-column">
+                            <div class="badge bg-success mb-3 align-self-start font-outfit">Automation & Scraping</div>
+                            <h4 class="card-title font-outfit text-white fw-bold">AI Vagas & Scraping</h4>
+                            <p class="card-text font-inter text-secondary flex-grow-1">Sistema autônomo para coleta e análise de vagas utilizando técnicas de web scraping associadas à análise de IA para matching perfeito de perfil.</p>
+                            <a href="https://github.com/seu-usuario/ai-vagas" target="_blank" class="btn btn-outline-light mt-3 stretched-link rounded-pill font-inter">Ver no GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark py-5 border-top border-secondary">
+        <div class="container text-center">
+            <h3 class="font-outfit text-white mb-4">Vamos construir algo incrível?</h3>
+            <div class="d-flex justify-content-center gap-3 mb-4">
+                <a href="#" class="btn btn-outline-light rounded-circle social-btn" aria-label="LinkedIn">
+                    <i>in</i>
+                </a>
+                <a href="#" class="btn btn-outline-light rounded-circle social-btn" aria-label="GitHub">
+                    <i>gh</i>
+                </a>
+                <a href="mailto:seuemail@example.com" class="btn btn-outline-light rounded-circle social-btn" aria-label="Email">
+                    <i>@</i>
+                </a>
+            </div>
+            <p class="text-secondary font-inter small m-0">&copy; 2026. Feito com rigor técnico e design premium.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom Script -->
+    <script src="js/main.js"></script>
+</body>
+</html>
